@@ -1,0 +1,78 @@
+#body {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    width: 100%;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 1.2em;
+    margin-top: 100px;
+    margin-left: 14px;
+}
+
+#name {
+    color: rgb(131, 40, 131);
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-left: 10px;
+}
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+  
+#card {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.85);
+    box-shadow: 5px 5px 10px rgba(28, 7, 1, 0.85);
+    padding: 5px;
+    margin: 14px 14px;
+    cursor: pointer;
+}  
+
+#card:hover {
+    transform: scale(1.1);
+
+    -webkit-transition-timing-function: 1s ease-in;
+    -webkit-transition: .5s;
+    transition-timing-function: 1s ease-in;
+    transition: .5s;
+}
+
+
+#button {
+    width: 75%;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 14px;
+}
+
+@media (max-device-width : 540px) {
+    #header, #button {
+        font-size: small;
+        margin-top: 20px;
+    }
+    #cards {
+        margin-bottom: 20px;
+    }
+    #card {
+        height: 40px;
+        width: 40px;
+        margin: 5px 10px;
+        box-shadow: 2px 2px 3px rgba(28, 7, 1, 0.85);
+        justify-content: center;
+    }
+    button {
+        font-size: x-small !important;
+    }
+
+}

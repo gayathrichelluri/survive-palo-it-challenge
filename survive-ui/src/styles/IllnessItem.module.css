@@ -1,0 +1,34 @@
+#item {
+    display: flex;
+    margin-top: 10px;
+    width: 75%;
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 1.2em;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+#item:hover {
+    transform: scale(1.01);
+
+    -webkit-transition-timing-function: 1s ease-in;
+    -webkit-transition: .5s;
+    transition-timing-function: 1s ease-in;
+    transition: .5s;
+}
+
+#itemname {
+    color: rgb(26, 54, 153) !important;
+}
+
+#arrow {
+    color: darkmagenta;
+}
+
+@media (max-device-width : 540px) {
+    #item {
+        font-size: small;
+    }
+
+}

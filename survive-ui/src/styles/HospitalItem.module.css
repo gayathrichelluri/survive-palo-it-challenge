@@ -1,0 +1,58 @@
+#item {
+    display: flex;
+    margin-top: 10px;
+    width: 75%;
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 1.2em;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    justify-content: space-between; 
+    /* box-shadow: 2px 2px 5px grey; */
+}
+
+#item:hover {
+    transform: scale(1.01);
+
+    -webkit-transition-timing-function: 1s ease-in;
+    -webkit-transition: .5s;
+    transition-timing-function: 1s ease-in;
+    transition: .5s;
+}
+
+#name {
+    /* color: rgb(15, 30, 82); */
+    color: rgb(26, 54, 153);
+}
+
+#wait {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#waitTime,#waitText {
+    color: gray;
+    font-size: 1em;
+    font-size: small;
+}
+
+#waitTime {
+    color: rgb(161, 20, 126);
+    font-family: Georgia, Times, serif;
+    font-weight: bold;
+}
+
+
+
+@media (max-device-width : 540px) {
+    #name {
+        font-size: x-small;
+    }
+    #wait {
+        flex-direction: column;
+    }
+    #waitTime,#waitText {
+        font-size: xx-small;
+    }
+
+}

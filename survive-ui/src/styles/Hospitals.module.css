@@ -1,0 +1,29 @@
+#list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px;
+    width: 100%;
+}
+
+#header{
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+#button {
+    width: 75%;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+@media (max-device-width : 540px) {
+    #header {
+        font-size: small;
+    }
+    button {
+        font-size: x-small !important;
+    }
+
+}
